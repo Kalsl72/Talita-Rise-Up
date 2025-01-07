@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talita Rise Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Talita Rise Up</h1>
+    <nav>
+      <ul>
+        <li><a href="#data-collection">Data Collection</a></li>
+        <li><a href="#donor-interaction">Donor Interaction</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Data Collection Section -->
+  <section id="data-collection">
+    <h2>Household Survey & Goal Setting</h2>
+    <form id="survey-form">
+      <h3>Initial Assessment</h3>
+      <label for="income">Monthly Income:</label>
+      <input type="number" id="income" name="income" required>
+
+      <label for="health">Health Conditions:</label>
+      <textarea id="health" name="health" rows="3" required></textarea>
+
+      <label for="education">Education Levels:</label>
+      <textarea id="education" name="education" rows="3" required></textarea>
+
+      <label for="needs">Immediate Needs:</label>
+      <textarea id="needs" name="needs" rows="3" required></textarea>
+
+      <h3>SMART Goals</h3>
+      <label for="goal">Specific Goal:</label>
+      <input type="text" id="goal" name="goal" required>
+
+      <label for="deadline">Deadline:</label>
+      <input type="date" id="deadline" name="deadline" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Donor Interaction Section -->
+  <section id="donor-interaction">
+    <h2>Track Supported Families</h2>
+    <div id="family-profiles">
+      <div class="family-card">
+        <h3>Family A</h3>
+        <p><strong>Education:</strong> 2 children enrolled in school.</p>
+        <p><strong>Health:</strong> Access to basic healthcare.</p>
+        <p><strong>Economic Stability:</strong> Income increased by 20%.</p>
+      </div>
+      <div class="family-card">
+        <h3>Family B</h3>
+        <p><strong>Education:</strong> 1 child receiving tutoring.</p>
+        <p><strong>Health:</strong> Awaiting healthcare connection.</p>
+        <p><strong>Economic Stability:</strong> Stable income.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Talita Rise Up. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
